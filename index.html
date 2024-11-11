@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Chapter</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#">Second Chapter</a>
+        <ul>
+            <li class="link hide-on-mobile"><a href="#">Categories</a></li>
+            <li class="link hide-on-mobile"><a href="#">Trade Books</a></li>
+            <li class="link hide-on-mobile"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a onclick=expandSidebar() class="burger"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li  onclick=closeSidebar() class="close"><i class="fa-solid fa-xmark"></i></li>
+                <li class="sidebar-link"><a href="#">Categories</a></li>
+                <li class="sidebar-link"><a href="#">Trade Books</a></li>
+                <li class="sidebar-link"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="hero-title">Every book deserves a second chapter</h1>
+        <img src="./images/hero-image.png" class="hero-image">
+        <p class="hero-subtitle">Uncover new stories, rediscover old favorites, and give books a new home.</p>
+        <button class="hero-button">Explore Books</button>
+    </header>
+
+    <div class="product-container">
+        <h2>Just Arrived</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 1.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 2.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 3.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 4.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 5.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 2.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 4.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 1.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 3.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 5.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="trade-section">
+        <h2 class="trade-title">Books Gathering Dust? Trade Them for Credit!</h2>
+        <img src="./images/trade-image.png" class="trade-image">
+        <p class="trade-subtitle">Exchange your old reads for something fresh! It’s easy, fun, and good for the planet.</p>
+        <button class="trade-button">Start Trading Now</button>
+    </div>
+
+    <div class="product-container">
+        <h2>Fiction</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 1.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 2.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 3.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 4.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 5.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 2.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 4.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 1.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p> 
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 3.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <img src="./images/book 5.png" alt="" class="product-image">
+                <h4>A Return to Love</h4>
+                <p>by Marianne Williams</p>
+                <h3>R50</h3>
+                <p>Condition: Used</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-container">
+        <h2>Books for Every Chapter of Life</h2>
+        <p>Explore handpicked books across genres, all waiting for a new home</p>
+        <div class="category-grid-container">
+            <div class="category-card">
+                <img class="category-image" src="./images/category-1.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img class="category-image" src="./images/category-2.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img class="category-image" src="./images/category-3.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img class="category-image" src="./images/category-4.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img class="category-image" src="./images/category-5.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+            <div class="category-card">
+                <img class="category-image" src="./images/category-6.png" alt="">
+                <div class="overlay">
+                    <h3>Category</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
