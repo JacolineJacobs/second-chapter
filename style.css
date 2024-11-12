@@ -178,7 +178,7 @@ h2 {
 
 h3 {
     font-family: Bitter;
-    font-size: 1.50rem;
+    font-size: 1.40rem;
     font-weight: 600;
 }
 
@@ -532,7 +532,6 @@ header {
 /* testimonial section styling */
 .testimonials {
     margin: 80px 0px;
-    padding: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -540,35 +539,66 @@ header {
     justify-content: center;
     position: relative;
     overflow: hidden;
-}
-
-.testimonial-image {
-    object-fit: cover;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+    padding: 80px;
+    background-image: url('./images/testimonial background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .testimonial-slider {
     display: flex;
-    width: 1000px;
-    margin: 40px 0;
+    padding: 40px 0;
     z-index: 10;
-    gap: 36px;
     overflow: hidden;
+    scroll-behavior: smooth;
+    width: 900px;
 }
 
 .testimonial-card {
-    width: 600px;
     border: 1px solid var(--dark-color);
     border-radius: 15px;
     padding: 32px;
     text-align: center;
     background-color: var(--light-color);
+    width: 900px;
+    flex-shrink: 0;
 }
 
 .testimonial-card h4 {
     margin-top: 16px;
+}
+
+.testimonial-title {
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .testimonials {
+        padding: 40px;
+        background-size: contain;
+    }
+    .testimonial-slider {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .testimonial-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 20px;
+        background-size: cover;
+    }
+    .testimonial-slider {
+        width: 100%;
+    }
+    .testimonial-card {
+        width: 100%;
+    }
 }
 
 /* faq section styling */
@@ -578,6 +608,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 80px;
 }
@@ -589,14 +620,14 @@ header {
 
 .faq-question {
     padding: 24px;
-    width: 900px;
+    width: 800px;
     display: flex;
     align-items: center;
 }
 
 .faq-answer {
     display: none;
-    width: 900px;
+    width: 800px;
     padding: 24px;
     background-color: var(--light-color);
     border: 1px solid var(--dark-color);
@@ -605,6 +636,7 @@ header {
 
 .faq-item i {
     margin-left: auto;
+    padding-left: 24px;
 }
 
 .faq-item span {
@@ -622,6 +654,33 @@ header {
     background-color: var(--highlight-color);
 }
 
+@media (max-width: 900px) {
+    .faq-question {
+        width: 500px;
+    }
+    
+    .faq-answer {
+        width: 500px;
+        padding: 24px;
+    }
+    .faq-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-question {
+        padding: 16px;
+        width: 350px;
+    }
+    
+    .faq-answer {
+        width: 350px;
+        padding: 16px;
+    }
+}
+
+
 /* footer styling */
 
 footer {
@@ -629,11 +688,76 @@ footer {
 }
 
 .footer {
-    padding: 40px 80px;
+    padding: 48px 80px;
     display: flex;
     justify-content: space-between;
 }
 
 .subscribe-container {
-    width: 450px;
+    max-width: 450px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul h4 {
+    padding-bottom: 8px;
+}
+
+.footer ul li {
+    padding-bottom: 4px;
+}
+
+.subscribe-container h4 {
+    padding-bottom: 8px;
+}
+
+.subscribe-container input {
+    height: 50px;
+    padding: 8px 16px;
+    border: 1px solid var(--dark-color);
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.subscribe-container button {
+    border-radius: 0 1.5rem 1.5rem 0;
+    height: 50px;
+    padding: 0px 48px;
+}
+
+.subscribe-container button:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer; 
+}
+
+.subscribe-row {
+    display: flex;
+    padding-top: 12px;
+}
+
+hr {
+    border: 1px solid #01090a;
+}
+
+.footer-end {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        padding: 48px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscribe-container h4 {
+        padding-top: 16px;
+    }
+    .footer ul h4 {
+        padding-top: 16px;
+
+    }
 }

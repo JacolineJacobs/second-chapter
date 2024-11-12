@@ -17,14 +17,11 @@ function closeSidebar() {
 const slider = document.querySelector('.testimonial-slider');
 const cards = document.querySelectorAll('.testimonial-card');
 let currentIndex = 0;
-const totalCards = cards.length;
+const cardWidth = cards[0].offsetWidth;
 
 function autoScroll() {
-    currentIndex = (currentIndex + 1) % totalCards;
-    slider.scrollTo({
-        left: cards[currentIndex].offsetLeft,
-        behavior: 'smooth',
-    });
+    currentIndex = (currentIndex + 1) % cards.length;
+    slider.scrollLeft = currentIndex * cardWidth;
 }
 
 setInterval(autoScroll, 3000);
