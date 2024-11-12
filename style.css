@@ -665,6 +665,7 @@ header {
     }
     .faq-container {
         text-align: center;
+        padding: 24px 0;
     }
 }
 
@@ -758,6 +759,9 @@ hr {
     }
     .footer ul h4 {
         padding-top: 16px;
-
+    }
+    
+    .subscribe-container input {
+        padding: 8px; 
     }
 }
