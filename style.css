@@ -270,6 +270,7 @@ header {
     .hero-button {
         margin: 0;
         width: 100%;
+        padding: 16px 24px;
     }
 }
 
@@ -421,6 +422,8 @@ header {
         "button";
         padding: 48px;
         text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .trade-title {
         margin: 0;
@@ -437,12 +440,15 @@ header {
     .trade-button {
         margin: 0;
         width: 100%;
+        padding: 16px 24px;
     }
 }
 
 @media (max-width: 480px) {
     .trade-section {
         padding: 0px 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -586,6 +592,9 @@ header {
     .testimonial-card {
         width: 80%;
     }
+    .testimonial-title {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -666,6 +675,7 @@ header {
     .faq-container {
         text-align: center;
         padding: 24px 0;
+        margin: 0;
     }
 }
 
