@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Chapter</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="./index.html">Second Chapter</a>
+        <ul>
+            <li class="link hide-on-mobile"><a href="#">Categories</a></li>
+            <li class="link hide-on-mobile"><a href="#">Trade Books</a></li>
+            <li class="link hide-on-mobile"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a onclick=expandSidebar() class="burger"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li  onclick=closeSidebar() class="close"><i class="fa-solid fa-xmark"></i></li>
+                <li class="sidebar-link"><a href="#">Categories</a></li>
+                <li class="sidebar-link"><a href="#">Trade Books</a></li>
+                <li class="sidebar-link"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cart-title">
+        <h2>Your Cart</h2>
+        <p>Review your selections below. Let's get started!</p>
+    </header>
+        <div class="cart-container">
+            <div class="cart-titles-row">
+                <p>Product</p>
+                <p>Quantity</p>
+                <p>Price</p>
+            </div>
+            <div class="product-details">
+
+            </div>
+            <div class="total-container">
+                <div class="cart-total-row"><p>Subtotal: </p><p class="subtotal">R50</p></div>
+                <div class="cart-total-row"><p>Delivery: </p><p class="delivery">R50</p></div>
+                <div class="cart-total-row"><p>Total: </p><p class="total">R50</p></div>
+            </div>
+            <hr>
+            <button class="button cart-button">Confirm Order</button>
+        </div>
+    
+
+    <footer>
+        <div class="footer">
+        <a class="logo" href="#">Second Chapter</a>
+        <ul><h4>Company Info</h4>
+            <li>We are hiring</li>
+            <li>Donations</li>
+            <li>Blog</li>
+        </ul>
+        <div class="subscribe-container">
+            <h4>Subscribe to our newsletter</h4>
+            <p>Stay updated with our latest arrivals and exclusive offers. Subscribe to our newsletter!</p>
+            <div class="subscribe-row"><input placeholder="Your Email" required><button class="button">Subscribe</button></div>
+        </div>
+        </div>
+        <hr>
+        <p class="footer-end">2024 Jacoline Jacobs | Web Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

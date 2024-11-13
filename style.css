@@ -775,3 +775,48 @@ hr {
         padding: 8px; 
     }
 }
+
+/* CART PAGE STYLING */
+.cart-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details {
+    padding: 24px 80px;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.cart-container {
+    padding: 0px 80px;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.cart-titles-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.cart-button {
+    margin: 36px 0;
+}
+
+.cart-button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.total-container {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.cart-total-row {
+    display: flex;
+    gap: 24px;
+}
