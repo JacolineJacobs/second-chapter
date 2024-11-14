@@ -10,8 +10,24 @@ function expandSidebar() {
 const close = document.querySelector('.close');
 
 function closeSidebar() {
-    sidebar.style.display = "none";
+    sidebar.style.display = 'none';
 }
+
+// greeting message
+const greetingElement = document.getElementById('greeting');
+const currentHour = new Date().getHours();
+let greetingMessage;
+
+if (currentHour < 12) {
+    greetingMessage = 'Good Morning! Ready to start a new chapter? Find a great read to brighten your day!';
+} else if (currentHour < 18) {
+    greetingMessage = 'Good Afternoon! Take a break and explore – the next book adventure awaits you here at Second Chapter!';
+} else {
+    greetingMessage = 'Good Evening! Wind down with a captivating story – every book has a world to discover!';
+}
+
+greetingElement.textContent = greetingMessage;
+
 
 // testimonial automatic slider 
 const slider = document.querySelector('.testimonial-slider');
@@ -57,3 +73,5 @@ faqButtons.forEach((button) => {
         }
     });
 });
+
+

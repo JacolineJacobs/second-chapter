@@ -144,6 +144,15 @@
     }
 }
 
+/* greeting message styling */
+
+#greeting {
+    padding: 90px 80px 10px 80px;
+    background-color: #FF6B6B;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 /* general text styling */
 
 html {
@@ -216,7 +225,7 @@ header {
     "title image"
     "subtitle image"
     "button image";
-    padding: 160px 80px 80px 80px;
+    padding: 60px 80px 80px 80px;
     width: 100%;
     gap: 16px;
 }
@@ -252,7 +261,7 @@ header {
         "image"
         "subtitle"
         "button";
-        padding: 124px 48px 48px 48px;
+        padding: 48px 48px 48px 48px;
         text-align: center;
     }
     .hero-title {
@@ -272,11 +281,14 @@ header {
         width: 100%;
         padding: 16px 24px;
     }
+    #greeting {
+        padding: 90px 24px 10px 24px;
+    }
 }
 
 @media (max-width: 480px) {
     header {
-        padding: 108px 24px 24px 24px;
+        padding: 24px 24px 24px 24px;
     }
 }
 
