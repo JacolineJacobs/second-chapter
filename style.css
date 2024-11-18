@@ -368,9 +368,9 @@ header {
 @media (max-width: 480px) {
     .product-card {
         flex: 0 0 150px;
-        padding: 12px;
+        padding: 8px;
         border-radius: 15px;
-        gap: 8px;
+        gap: 6px;
     }
     .product-container {
         padding: 12px 24px;
