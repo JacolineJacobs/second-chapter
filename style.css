@@ -319,6 +319,7 @@ header {
     gap: 12px;
     border-radius: 30px;
     scroll-snap-align: center;
+    justify-content: flex-start;
 }
 
 .product-card:hover {
@@ -352,7 +353,7 @@ header {
 
     .product-card {
         flex: 0 0 200px;
-        padding: 20px;
+        padding: 24px;
         border-radius: 20px;
     }
     .product-container {
@@ -366,8 +367,8 @@ header {
 
 @media (max-width: 480px) {
     .product-card {
-        flex: 0 0 150px;
-        padding: 8px;
+        flex: 0 0 180px;
+        padding: 16px;
         border-radius: 15px;
         gap: 6px;
     }
